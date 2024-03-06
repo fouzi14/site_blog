@@ -1,0 +1,132 @@
+.Profil {
+    padding: 30px;
+}
+
+.profil_header {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--primary-color);
+}
+
+.prfil_image_wrapper {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    text-align: center;
+}
+
+.profil_image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.upload_profil_photo_btn,
+.upload_profil_photo_icon {
+    color: var(--primary-color);
+    background-color: #eee;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    padding: 0 5px;
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    margin: auto;
+    width: max-content;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 25px;
+}
+
+.upload_profil_photo_btn {
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--dark-color);
+    right: -65px;
+}
+
+.profil_username {
+    font-size: 30px;
+    color: var(--white-color);
+    margin: 10px 0;
+}
+
+.profil_bio{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--main-color);
+    margin: 10px 0;
+}
+
+.user_date_joined strong {
+    color: var(--gray-color);
+    font-size: 17px;
+}
+
+.user_date_joined span {
+    color: var(--green-sea-color);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.profil_update_btn {
+    font-size: 21px;
+    font-weight: 500;
+    background-color: var(--green-color);
+    color: var(--white-color);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.profil_post_list {
+    width: 800px;
+    margin: 20px auto;
+}
+
+.profile-posts-list-title {
+    margin-bottom: 20px;
+    padding: 5px 0;
+    font-size: 40px;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.delete_acount_btn {
+    background-color: var(--white-color);
+    color: var(--red-color);
+    padding: 5px;
+    border: 1px solid var(--red-color);
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 920px) {
+    .profil_post_list {
+        width: 100%;
+    }
+}
+
+@media (max-width: 520px) {
+    .profile {
+        padding: 15px;
+    }
+
+    .profil_header {
+        padding: 10px;
+    }
+
+    .profile_bio {
+        text-align: center;
+    }
+}

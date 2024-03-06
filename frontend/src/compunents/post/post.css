@@ -1,0 +1,109 @@
+.post_list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 9;
+}
+
+.post_item{
+    width: 100%;
+    background-color: rgb(244, 244, 244);
+    margin-bottom: 40px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.post_item_image_wrapper{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.post_item_image{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+.post_item_info_wrapper{
+    width: 100%;
+}
+.post_item_info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+    border-bottom: 1px solid var(--gray-color);
+    padding-bottom: 5px;
+}
+.post_item_auther strong{
+    font-size: 18px;
+    color: var(--green-sea-color);
+}
+.post_item_username{
+    font-size: 17px;
+    color: var(--primary-color);
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.post_item_date{
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--green-sea-color);
+}
+.post_item_details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+.post_item_title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: capitalize;
+    color: var(--primary-color);
+}
+.post_item_category{
+    background-color: var(--pumpkin-color);
+    color: var(--white-color);
+    padding: 2px 7px;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.post_item_description{
+    font-size: 17px;
+    line-height: 1.9;
+    color: var(--secondary-color);
+    font-weight: 500;
+    padding: 5px;
+    margin: 10px 0;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp:2 ;
+    -webkit-box-orient: vertical;
+}
+.post_item_link{
+    background-color: var(--green-color);
+    color: var(--white-color);
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 21px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+@media(max-width : 770px){
+    .post_item{
+        padding: 10px;
+    }
+
+   .post_item_image{
+    object-fit: cover;
+   }
+}

@@ -1,0 +1,19 @@
+.posts{
+    display: flex;
+    align-items: flex-start;
+    padding: 30px;
+}
+
+@media(max-width : 990px){
+    .posts{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width : 520px){
+    .posts{
+        padding: 15px;
+    }
+}
+
